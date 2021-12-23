@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>azure keyvault on Clarity</title>
+    <link>//srinivasnarula.github.io/tags/azure-keyvault/</link>
+    <description>Recent content in azure keyvault on Clarity</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Sun, 25 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="//srinivasnarula.github.io/tags/azure-keyvault/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fetch apigee access token using Azure Function</title>
+      <link>//srinivasnarula.github.io/post/apigee-azure-function/</link>
+      <pubDate>Sun, 25 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>//srinivasnarula.github.io/post/apigee-azure-function/</guid>
+      <description>
+        
+          &lt;h3 id=&#34;challenge&#34;&gt;Challenge&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Requirement is to call apigee api using AccessToken (oAuth) from SharePoint Framework  - &lt;code&gt;SPFx&lt;/code&gt; react application. But &lt;em&gt;challenge&lt;/em&gt; is Client ID and Client Secret get exposed if we use it in client application.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;resolution&#34;&gt;Resolution&lt;/h3&gt;
+&lt;p&gt;To overcome this &lt;strong&gt;challenge&lt;/strong&gt;, below steps were architected&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Stored apigee ClientID and ClientSecret in &lt;code&gt;Azure KeyVault&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Implemented &lt;code&gt;Azure Function&lt;/code&gt; with &lt;code&gt;Managed Identity&lt;/code&gt;, So KeyVault can be accessed only by this azure function.&lt;/li&gt;
+&lt;li&gt;Using standard HttpClient in Azure Function, requested apigee oAuth API by passing apigee ClientID Credentials received from Azure KeyVault.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;prerequisties&#34;&gt;Prerequisties:&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;apigee oAuth Setup. If you don&#39;t have one, please follow official apigee &lt;a href=&#34;https://docs.apigee.com/api-platform/tutorials/secure-calls-your-api-through-oauth-20-client-credentials&#34;&gt;link&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Setup apigee proxy api to generate ClientID and ClientSecret. Please refer &lt;a href=&#34;https://docs.apigee.com/api-platform/tutorials/secure-calls-your-api-through-oauth-20-client-credentials&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Azure Subscription. If you don&#39;t have it, create free subscription with official azure &lt;a href=&#34;https://azure.microsoft.com/en-gb/free/&#34;&gt;link&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;implementation&#34;&gt;Implementation:&lt;/h3&gt;
+&lt;h5 id=&#34;azure-function-coding&#34;&gt;Azure Function Coding&lt;/h5&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-c#&#34; data-lang=&#34;c#&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Hello&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;World&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h5 id=&#34;key-vault-setup&#34;&gt;Key Vault Setup&lt;/h5&gt;
+&lt;p&gt;Once apigee credentials are ready, then provision an Azure Key Vault Service as shown below&lt;/p&gt;
+&lt;p&gt;Create&lt;/p&gt;
+&lt;h5 id=&#34;azure-function-configuration-settings&#34;&gt;Azure Function Configuration Settings&lt;/h5&gt;
+&lt;h5 id=&#34;azure-function-managed-identity&#34;&gt;Azure Function Managed Identity&lt;/h5&gt;
+&lt;!-- I couldn&#39;t any information much over internet to get an oAuth access token from Azure Funtion with c#. Same steps can followed in other langugaes. Planned to do one in python, will share it once I have it ready. --&gt;
+
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
