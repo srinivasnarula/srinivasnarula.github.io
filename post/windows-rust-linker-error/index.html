@@ -155,34 +155,34 @@
     
     <h1 id="issue">Issue</h1>
 <p>While compiling Rust program in a windows environment, you may encounter the error : linker <code>link.exe</code> not found. This is because of the absence of the C++ build tools in your machine. For compiling Rust programs successfully, one of the prerequisites is the installation of the Build Tools for Visual Studio 2019.</p>
-<img src="../../static/images/rust-windows-error.png" />
+<img src="/images/rust-windows-error.png" />
 <h1 id="solution">Solution</h1>
-<h3 id="option-1">Option 1</h3>
+<h2 id="option-1-i-tried-this-approach">Option 1 (I tried this approach)</h2>
+<p>In my system, I've Visual Studio 2022, So instaled C++ related components by modifying Visual Studio settings.</p>
+<ul>
+<li>
+<p>Open Control Panel -&gt; Programs and Features -&gt; Search for 2022 -&gt; Right click on Visual Studio 2022 -&gt; Click on Change.</p>
+<img src="/images/rust-error-2022-settings.png" />
+</li>
+<li>
+<p>It would open Visual Settings page as shown below.</p>
+<img src="/images/rust-visual-studio-settings.png" />
+</li>
+<li>
+<p>Click on <strong>Desktop development with C++</strong> and install.
+<img src="/images/rust-c++-settings.png" /></p>
+</li>
+<li>
+<p>Once installation completed, You would you should be able to resolve cargo <code>link.exe</code> error and compile successfully :).</p>
+</li>
+</ul>
+<h2 id="option-2">Option 2</h2>
 <ul>
 <li>
 <p><a href="https://visualstudio.microsoft.com/thank-you-downloading-visual-studio">Download Visual Studio Build Tools</a></p>
 </li>
 <li>
 <p>Install downloaded package</p>
-</li>
-</ul>
-<h3 id="option-2-i-tried-this-approach">Option 2 (I tried this approach)</h3>
-<p>In my system, I've Visual Studio 2022, So instaled C++ related components by modifying Visual Studio settings.</p>
-<ul>
-<li>
-<p>Open Control Panel -&gt; Programs and Features -&gt; Search for 2022 -&gt; Right click on Visual Studio 2022 -&gt; Click on Change.</p>
-<img src="../../static/images/rust-error-2022-settings.png" />
-</li>
-<li>
-<p>It would open Visual Settings page as shown below.</p>
-<img src="../../static/images/rust-visual-studio-settings.png" />
-</li>
-<li>
-<p>Click on <strong>Desktop development with C++</strong> and install.
-<img src="../../static/images/rust-c++-settings.png" /></p>
-</li>
-<li>
-<p>Once installation completed, You would you should be able to resolve cargo <code>link.exe</code> error and compile successfully :).</p>
 </li>
 </ul>
 

@@ -18,34 +18,34 @@
         
           &lt;h1 id=&#34;issue&#34;&gt;Issue&lt;/h1&gt;
 &lt;p&gt;While compiling Rust program in a windows environment, you may encounter the error : linker &lt;code&gt;link.exe&lt;/code&gt; not found. This is because of the absence of the C++ build tools in your machine. For compiling Rust programs successfully, one of the prerequisites is the installation of the Build Tools for Visual Studio 2019.&lt;/p&gt;
-&lt;img src=&#34;../../static/images/rust-windows-error.png&#34; /&gt;
+&lt;img src=&#34;https://srinivasnarula.github.io/images/rust-windows-error.png&#34; /&gt;
 &lt;h1 id=&#34;solution&#34;&gt;Solution&lt;/h1&gt;
-&lt;h3 id=&#34;option-1&#34;&gt;Option 1&lt;/h3&gt;
+&lt;h2 id=&#34;option-1-i-tried-this-approach&#34;&gt;Option 1 (I tried this approach)&lt;/h2&gt;
+&lt;p&gt;In my system, I&#39;ve Visual Studio 2022, So instaled C++ related components by modifying Visual Studio settings.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Open Control Panel -&amp;gt; Programs and Features -&amp;gt; Search for 2022 -&amp;gt; Right click on Visual Studio 2022 -&amp;gt; Click on Change.&lt;/p&gt;
+&lt;img src=&#34;https://srinivasnarula.github.io/images/rust-error-2022-settings.png&#34; /&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;It would open Visual Settings page as shown below.&lt;/p&gt;
+&lt;img src=&#34;https://srinivasnarula.github.io/images/rust-visual-studio-settings.png&#34; /&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click on &lt;strong&gt;Desktop development with C++&lt;/strong&gt; and install.
+&lt;img src=&#34;https://srinivasnarula.github.io/images/rust-c++-settings.png&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Once installation completed, You would you should be able to resolve cargo &lt;code&gt;link.exe&lt;/code&gt; error and compile successfully :).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;option-2&#34;&gt;Option 2&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&#34;https://visualstudio.microsoft.com/thank-you-downloading-visual-studio&#34;&gt;Download Visual Studio Build Tools&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Install downloaded package&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;option-2-i-tried-this-approach&#34;&gt;Option 2 (I tried this approach)&lt;/h3&gt;
-&lt;p&gt;In my system, I&#39;ve Visual Studio 2022, So instaled C++ related components by modifying Visual Studio settings.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Open Control Panel -&amp;gt; Programs and Features -&amp;gt; Search for 2022 -&amp;gt; Right click on Visual Studio 2022 -&amp;gt; Click on Change.&lt;/p&gt;
-&lt;img src=&#34;../../static/images/rust-error-2022-settings.png&#34; /&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;It would open Visual Settings page as shown below.&lt;/p&gt;
-&lt;img src=&#34;../../static/images/rust-visual-studio-settings.png&#34; /&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Click on &lt;strong&gt;Desktop development with C++&lt;/strong&gt; and install.
-&lt;img src=&#34;../../static/images/rust-c++-settings.png&#34; /&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Once installation completed, You would you should be able to resolve cargo &lt;code&gt;link.exe&lt;/code&gt; error and compile successfully :).&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 

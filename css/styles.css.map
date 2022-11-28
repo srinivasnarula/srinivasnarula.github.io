@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "styles.css",
-	"sourceRoot": "C:/Users/MSSha/source/repos/srinivasnarula-blog",
+	"sourceRoot": "C:/Users/MSSha/source/repos/Personal/srinivasnarula-blog",
 	"sources": [
 		"themes/hugo-clarity/assets/sass/main.sass",
 		"themes/hugo-clarity/assets/sass/_variables.sass",
