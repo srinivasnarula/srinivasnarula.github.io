@@ -1,0 +1,49 @@
++++
+author = "Srinivas Narula"
+title = "Fetch apigee access token using Azure Function"
+date = "2021-07-25"
+description = "Fetch apigee access token using Azure Function"
+tags = [
+    "apigee",
+    "azure keyvault",
+    "Azure function app",
+    "oAuth",
+    "C#"
+]
+categories = [
+    "apigee",
+    "azure"
+]
++++
+
+### Challenge
+
+> Requirement is to call apigee api using AccessToken (oAuth) from SharePoint Framework  - `SPFx` react application. But *challenge* is Client ID and Client Secret get exposed if we use it in client application.
+
+### Resolution
+ To overcome this **challenge**, below steps were architected
+1. Stored apigee ClientID and ClientSecret in `Azure KeyVault`.
+2. Implemented `Azure Function` with `Managed Identity`, So KeyVault can be accessed only by this azure function.
+3. Using standard HttpClient in Azure Function, requested apigee oAuth API by passing apigee ClientID Credentials received from Azure KeyVault.
+   
+### Prerequisties:
+
+1. apigee oAuth Setup. If you don't have one, please follow official apigee [link](https://docs.apigee.com/api-platform/tutorials/secure-calls-your-api-through-oauth-20-client-credentials).
+2.  Setup apigee proxy api to generate ClientID and ClientSecret. Please refer [here](https://docs.apigee.com/api-platform/tutorials/secure-calls-your-api-through-oauth-20-client-credentials).
+3.  Azure Subscription. If you don't have it, create free subscription with official azure [link](https://azure.microsoft.com/en-gb/free/).
+
+### Implementation:
+
+##### Azure Function Coding
+``` c#
+Hello World
+```
+##### Key Vault Setup
+Once apigee credentials are ready, then provision an Azure Key Vault Service as shown below
+
+Create
+##### Azure Function Configuration Settings
+
+##### Azure Function Managed Identity
+
+<!-- I couldn't any information much over internet to get an oAuth access token from Azure Funtion with c#. Same steps can followed in other langugaes. Planned to do one in python, will share it once I have it ready. -->

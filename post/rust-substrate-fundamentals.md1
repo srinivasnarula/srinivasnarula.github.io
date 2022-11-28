@@ -1,0 +1,43 @@
++++
+author = "Srinivas Narula"
+title = "Rust & Substrate - Fundamentals"
+date = "2022-03-31"
+description = "In this article we discuss about rust and substrate"
+tags = [
+   "Rust",
+   "Substrate",
+   "Polkadot",
+   "Fundamentals"
+]
+categories = [
+    "BlockChain",
+    "Rust"
+]
++++
+
+### Overview 
+In this article we'll discuss about core concepts based on Rust and Substrate and its related to core blockchain. With further do, lets get started.
+
+<ol>
+    <li>Substrate</li>
+    <li>Frame</li>
+    <li>Types</li>
+    <li>Traits</li>
+    <li>Generics</li>
+    <li>Macros</li>
+    <li>Limits</li>
+    <li>Storage</li>
+</ol>
+
+## 1. Substrate
+### What is Substrate?
+
+Parity Technologies has developed an framework and toolkit to develop and application specific blockchains and it is referred as <strong><em>Substrate</strong></em>.
+
+Using Substrate framework, application logic is written in Rust and encapsulated in specialized runtimes (i.e., a executable) which will be running on the node running on blockchain network.Substrate uses WebAssembly to consume some of key defnining features such as provability, verification and upgradability of runtimes.
+
+In Substrate, custom runtime logic is written in pallets using <strong><em>Framework for Runtime Aggregation of Modularized Entities (FRAME)</strong></em> toolkit. Thking from C# developer point, comparing the runtime of a Substrate blockchain to a solution, carrying all of its business logic in a multitude of differerent different projects.
+
+## 2. FRAME
+
+

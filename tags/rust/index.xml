@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rust on Srinivas Narula</title>
+    <link>https://srinivasnarula.github.io/tags/rust/</link>
+    <description>Recent content in rust on Srinivas Narula</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Sat, 26 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://srinivasnarula.github.io/tags/rust/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RUST error: linker `link.exe` not found</title>
+      <link>https://srinivasnarula.github.io/post/windows-rust-linker-error/</link>
+      <pubDate>Sat, 26 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://srinivasnarula.github.io/post/windows-rust-linker-error/</guid>
+      <description>
+        
+          &lt;h1 id=&#34;issue&#34;&gt;Issue&lt;/h1&gt;
+&lt;p&gt;While compiling Rust program in a windows environment, you may encounter the error : linker &lt;code&gt;link.exe&lt;/code&gt; not found. This is because of the absence of the C++ build tools in your machine. For compiling Rust programs successfully, one of the prerequisites is the installation of the Build Tools for Visual Studio 2019.&lt;/p&gt;
+&lt;img src=&#34;../../static/images/rust-windows-error.png&#34; /&gt;
+&lt;h1 id=&#34;solution&#34;&gt;Solution&lt;/h1&gt;
+&lt;h3 id=&#34;option-1&#34;&gt;Option 1&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://visualstudio.microsoft.com/thank-you-downloading-visual-studio&#34;&gt;Download Visual Studio Build Tools&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Install downloaded package&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;option-2-i-tried-this-approach&#34;&gt;Option 2 (I tried this approach)&lt;/h3&gt;
+&lt;p&gt;In my system, I&#39;ve Visual Studio 2022, So instaled C++ related components by modifying Visual Studio settings.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Open Control Panel -&amp;gt; Programs and Features -&amp;gt; Search for 2022 -&amp;gt; Right click on Visual Studio 2022 -&amp;gt; Click on Change.&lt;/p&gt;
+&lt;img src=&#34;../../static/images/rust-error-2022-settings.png&#34; /&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;It would open Visual Settings page as shown below.&lt;/p&gt;
+&lt;img src=&#34;../../static/images/rust-visual-studio-settings.png&#34; /&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click on &lt;strong&gt;Desktop development with C++&lt;/strong&gt; and install.
+&lt;img src=&#34;../../static/images/rust-c++-settings.png&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Once installation completed, You would you should be able to resolve cargo &lt;code&gt;link.exe&lt;/code&gt; error and compile successfully :).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

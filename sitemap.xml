@@ -1,18 +1,78 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-  <sitemap>
-    <loc>//srinivasnarula.github.io/en/sitemap.xml</loc>
-    
-      <lastmod>2021-07-25T00:00:00+00:00</lastmod>
-    
-  </sitemap>
-  
-  <sitemap>
-    <loc>//srinivasnarula.github.io/pt/sitemap.xml</loc>
-    
-      <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-    
-  </sitemap>
-  
-</sitemapindex>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://srinivasnarula.github.io/</loc>
+    <lastmod>2022-11-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://srinivasnarula.github.io/tags/c&#43;&#43;/</loc>
+    <lastmod>2022-11-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://srinivasnarula.github.io/categories/</loc>
+    <lastmod>2022-11-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://srinivasnarula.github.io/tags/ms-build/</loc>
+    <lastmod>2022-11-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://srinivasnarula.github.io/tags/os/</loc>
+    <lastmod>2022-11-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://srinivasnarula.github.io/post/</loc>
+    <lastmod>2022-11-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://srinivasnarula.github.io/tags/rust/</loc>
+    <lastmod>2022-11-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://srinivasnarula.github.io/categories/rust/</loc>
+    <lastmod>2022-11-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://srinivasnarula.github.io/post/windows-rust-linker-error/</loc>
+    <lastmod>2022-11-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://srinivasnarula.github.io/tags/</loc>
+    <lastmod>2022-11-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://srinivasnarula.github.io/tags/windows/</loc>
+    <lastmod>2022-11-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://srinivasnarula.github.io/categories/windows/</loc>
+    <lastmod>2022-11-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://srinivasnarula.github.io/about/</loc>
+    <lastmod>2021-07-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://srinivasnarula.github.io/tags/c#/</loc>
+    <lastmod>2021-07-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://srinivasnarula.github.io/tags/microosoft-graph/</loc>
+    <lastmod>2021-07-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://srinivasnarula.github.io/categories/microsoft-graph/</loc>
+    <lastmod>2021-07-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://srinivasnarula.github.io/post/ms-graph-handy-functions/</loc>
+    <lastmod>2021-07-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://srinivasnarula.github.io/categories/sharepoint/</loc>
+    <lastmod>2021-07-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://srinivasnarula.github.io/tags/sharepoint/</loc>
+    <lastmod>2021-07-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://srinivasnarula.github.io/tags/sharepoint-library/</loc>
+    <lastmod>2021-07-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://srinivasnarula.github.io/tags/sharepoint-list/</loc>
+    <lastmod>2021-07-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://srinivasnarula.github.io/archives/</loc>
+    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://srinivasnarula.github.io/about.pt/</loc>
+    <lastmod>2019-02-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://srinivasnarula.github.io/tags/index/</loc>
+  </url><url>
+    <loc>https://srinivasnarula.github.io/series/</loc>
+  </url>
+</urlset>
